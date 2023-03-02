@@ -6,6 +6,7 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps
 ---------------------
+keymap.set("n", "<F12>", 'gg/public<CR>wwve"adiMain<ESC>GVggjjy/public<CR>wwh"apea<BS><BS><BS><BS><ESC>')
 
 -- use H, L to move start or end of line
 keymap.set("n", "H", '^')
@@ -43,7 +44,7 @@ keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>") -- toggle file explorer
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
